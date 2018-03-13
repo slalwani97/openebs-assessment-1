@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-python-application
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: hello-python-application
+        image: docker.io/slalwani97/openebs-assessment:1
+        ports:
+        - containerPort: 80

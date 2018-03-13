@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pyhton-application
+  labels:
+    app: web
+spec:
+  containers:
+  - name: hello-pyhton-application
+    image: docker.io/slalwani97/openebs-assessment:1
+    ports:
+    - containerPort: 80
