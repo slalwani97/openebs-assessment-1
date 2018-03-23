@@ -18,7 +18,7 @@ This image shows the name of the user in the browser.
 
 3. Apply the .yaml files to run the app.
 
-   `kubectl apply -f pods.yaml`
+   `kubectl apply -f pod.yaml`
 
    `kubectl apply -f deployment.yaml`
 
